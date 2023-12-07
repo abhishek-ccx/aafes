@@ -6,7 +6,7 @@ import Link from "next/link";
 import router from "next/router";
 const Card = () => {
   // console.log(url);
-  const [tourData, setTourData] = useState([]);
+  const [tourData, setTourData] = useState([]) as any;
   const [deleted, setDeleted] = useState(0);
   const fetchData = async () => {
     try {
