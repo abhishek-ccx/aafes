@@ -39,10 +39,9 @@ const Card = () => {
   const deleteTour = async (id: any) => {
     try {
       // console.log(localStorage.getItem("token"))
-      const res = await axios.delete(
-        `http://127.0.0.1:9000/api/v1/tours/${id}`,
-        { headers: { authorization: localStorage.getItem("token") } },
-      );
+      await axios.delete(`http://127.0.0.1:9000/api/v1/tours/${id}`, {
+        headers: { authorization: localStorage.getItem("token") },
+      });
       setDeleted((prev) => prev + 1);
       console.log("Tour deleted successfully!");
     } catch (err: any) {
