@@ -19,7 +19,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        "https://aaefes-backend.onrender.com//api/v1/users/signup",
+        "https://aaefes-backend.onrender.com/api/v1/users/signup",
         {
           name,
           email,

@@ -14,7 +14,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "https://aaefes-backend.onrender.com//api/v1/users/login",
+        "https://aaefes-backend.onrender.com/api/v1/users/login",
         {
           email,
           password,

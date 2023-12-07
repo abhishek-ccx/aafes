@@ -12,7 +12,7 @@ const Navbar = () => {
     try {
       const email = localStorage.getItem("email");
       const res = await axios.post(
-        `https://aaefes-backend.onrender.com//api/v1/users/getrole`,
+        `https://aaefes-backend.onrender.com/api/v1/users/getrole`,
         {
           email,
         },

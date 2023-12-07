@@ -23,7 +23,7 @@ const Users = () => {
         router.push("/login");
       } else {
         const res = await axios.get(
-          `https://aaefes-backend.onrender.com//api/v1/users`,
+          `https://aaefes-backend.onrender.com/api/v1/users`,
           { headers: { authorization: localStorage.getItem("token") } },
         );
         setuserData(res.data.data.users);
@@ -42,7 +42,7 @@ const Users = () => {
     try {
       // console.log(localStorage.getItem("token"))
       const res = await axios.delete(
-        `https://aaefes-backend.onrender.com//api/v1/users/${id}`,
+        `https://aaefes-backend.onrender.com/api/v1/users/${id}`,
         { headers: { authorization: localStorage.getItem("token") } },
       );
       console.log("user deleted successfully!");
@@ -87,7 +87,7 @@ const Users = () => {
     e.preventDefault();
     try {
       const res = await axios.patch(
-        `https://aaefes-backend.onrender.com//api/v1/users/${copiedObject._id}`,
+        `https://aaefes-backend.onrender.com/api/v1/users/${copiedObject._id}`,
         { data: { role: selectedRole } },
       );
       // console.log("Role Changed!")

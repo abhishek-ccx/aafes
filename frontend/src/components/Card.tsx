@@ -21,7 +21,7 @@ const Card = () => {
         router.push("/login");
       } else {
         const res = await axios.get(
-          `https://aaefes-backend.onrender.com//api/v1/tours`,
+          `https://aaefes-backend.onrender.com/api/v1/tours`,
           {
             headers: { authorization: localStorage.getItem("token") },
           },
@@ -43,7 +43,7 @@ const Card = () => {
     try {
       // console.log(localStorage.getItem("token"))
       await axios.delete(
-        `https://aaefes-backend.onrender.com//api/v1/tours/${id}`,
+        `https://aaefes-backend.onrender.com/api/v1/tours/${id}`,
         {
           headers: { authorization: localStorage.getItem("token") },
         },
