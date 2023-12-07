@@ -1,0 +1,4 @@
+/* Importing Tailwind's base styles, component classes and utility classes. These are part of Tailwind's configuration.*/
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
